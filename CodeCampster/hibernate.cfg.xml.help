@@ -1,0 +1,15 @@
+﻿<hibernate-configuration xmlns="urn:nhibernate-configuration-2.2">
+  <session-factory name="NHibernate.Test">
+    <property name="connection.driver_class">NHibernate.Driver.MySqlDataDriver</property>
+    <property name="connection.connection_string">Database=CodeCampster;Data Source=localhost;User Id=root;Password=root</property>
+    <property name="dialect">NHibernate.Dialect.MySQLDialect</property>
+    <property name="proxyfactory.factory_class">NHibernate.ByteCode.Castle.ProxyFactoryFactory, NHibernate.ByteCode.Castle</property>
+
+    <!-- Only from demo.  Print out all SQL statements to Console.Out -->
+    <property name="show_sql">true</property>
+    
+    <!-- Select DLL to add mapping files from. -->
+    <mapping assembly="CodeCampster"/>
+    
+  </session-factory>
+</hibernate-configuration>

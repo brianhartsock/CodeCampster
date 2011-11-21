@@ -1,0 +1,75 @@
+﻿
+Things to do on laptop:
+ * Make sure ASP.NET MVC is updated
+ * 
+
+Download NHibernate
+ * Google NHibernate
+ * 2.1.0 generally available
+ * Download
+ * Create new lib folder
+   * copy download there, and extract
+   * Copy required
+   * Copy castle windsor
+
+
+(Need to talk about the virtual methods)
+(need to talk about the xml file)
+
+Do HQL
+Do criteria
+Do LINQ?
+
+
+https://www.hibernate.org/362.html
+
+
+https://www.hibernate.org/hib_docs/nhibernate/1.2/reference/en/html/
+
+http://blog.benday.com/archive/2006/01/15/3646.asxp
+
+
+MySQL
+ * Using Connector 5.1
+ * Bug with newer connectors and NHibernate 2.1.0 (I tried 6.1 and 5.2)
+ 
+ 
+Lazy Loading
+ * Have to add reference to NHibernate.ByteCode.Castle
+ * Change it in hibernate.cfg.xml
+ 
+Tests
+ * Note all references needed
+ * 
+ 
+ 
+Presentation
+ * Must have cascade set for collection to save entity
+ 
+Rerferences
+ * NHibernate
+ * Iesi.Collections
+ * NHibernate.ByteCode.Castle
+ * MySQL.Data
+ 
+Start:
+
+
+-- Give overview of NHibernate
+ * ORM
+ * Domain model
+ * Hibernate port
+ * Very mature
+ * Very complicated
+ * Very powerful
+ 
+-- Give overview of application
+ * Show lack of persistance
+ * Show domain objects
+
+-- Configure NHibernate
+ * Run tests
+ * hibernate.CFG.xml - Copy always, Embedded, rebuild
+ * mapping.HBM.xml - 
+ 
+-- 

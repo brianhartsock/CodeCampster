@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="CodeCampster">
+  <class name="CodeCampster.Models.Presentation">
+    <id name="Id">
+      <generator class="identity" />
+    </id>
+    <property name="Name" />
+    <property name="Abstract" />
+    <property name="Level" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="CodeCampster">
+  <class name="CodeCampster.Models.CodeCamp">
+    <id name="Id">
+      <generator class="identity" />
+    </id>
+    <property name="Name" column="code_camp_name" unique="true" />
+    <property name="Date" />
+    <component name="Address">
+      <property name="Line1" />
+      <property name="Line2" />
+      <property name="City" />
+      <property name="State" />
+      <property name="Zip" />
+    </component>
+
+    <set name="Presentations" cascade="all-delete-orphan">
+      <key column="code_camp_id" foreign-key="code_camp__presentation__fk" />
+      <one-to-many class="CodeCampster.Models.Presentation" />
+    </set>
+  </class>
+</hibernate-mapping>
